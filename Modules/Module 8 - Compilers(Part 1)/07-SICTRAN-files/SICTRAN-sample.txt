@@ -1,0 +1,19 @@
+PRINT("Fibonacci Sequence\n\n");
+
+i = 0;
+prev_prev = -1;
+prev      = 1;
+
+WHILE (i <= 30)
+{
+    fib = prev_prev + prev;
+    
+    PRINT(i); PRINT(": "); PRINT(fib);
+    
+    IF (fib%5 == 0) PRINT(" Divisible by 5!");
+    PRINT("\n");
+    
+    i = i + 1;
+    prev_prev = prev;
+    prev = fib;
+}
